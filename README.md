@@ -1,42 +1,42 @@
-# Overview
-Quick prototyping interaction toolkit intended for non coders or Unity beginners.
+# Stroke Rehabilitation VR Prototype
 
-Quick, 23 minute video guide below: 
-* https://youtu.be/mIoewQ2zQBI
+A Unity VR interaction prototype created for DDES9902. It explores how everyday and playful hand and arm activities could be presented as engaging upper-limb rehabilitation exercises. This is a design prototype, not a clinically validated rehabilitation tool.
 
-Unity, quick reminder videos (most less than 2 mins):
-* https://www.youtube.com/playlist?list=PLZP8wzCUfgsIQBKy3F4EwIlDgjX4_JypG
+## What is in the prototype
 
-Specific, EZPZ toolkit video guides:
-* https://www.youtube.com/playlist?list=PLZP8wzCUfgsKfgJDXuiHHAw-qjcEev1k-
+The project opens with an optional tutorial and then moves into a room containing seven activities:
 
-# Licensing Info
-by Matt Cabanag https://www.linkedin.com/in/mattavc/
+| Activity | Interaction |
+| --- | --- |
+| Wipe the table | Move a rag across the table. |
+| Spin the wheel | Turn a large wheel. |
+| Arrange flowers | Pick up and place flowers. |
+| Cupcakes | Pick up and interact with cupcakes. |
+| BBQ | Handle food around a grill. |
+| Basketball | Pick up and throw a ball. |
+| Hammering | Use a hammer to break jars. |
 
-MIT License:
-Copyright 2022 - present, Matt Cabanag
+The main scene includes instructional videos, visual callouts, audio guidance, teleport points, and a progress display for completed interactions. Activities are intended to explore reaching, grasping, releasing, turning, and coordinated arm movement through VR interactions.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+## Open the project
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+1. Install **Unity 6000.3.8f1** through Unity Hub.
+2. In Unity Hub, choose **Add project from disk** and select this directory (`DDES9902Assessment_prototype_Zoey`), which contains `Assets`, `Packages`, and `ProjectSettings`.
+3. Open `Assets/__My Prototype/TutorialScene.unity` and press Play to start at the tutorial. Use **Skip Tutorial** to go directly to the main scene, or open `Assets/__My Prototype/MainScene.unity` to inspect the activities directly.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+The project uses Unity's XR Interaction Toolkit, XR Hands, OpenXR, and Universal Render Pipeline. Its Android OpenXR settings include Meta Quest support. A compatible XR setup is needed to experience the intended hand interactions; opening the scenes in the editor is also useful for inspecting the design. No headset or build verification is claimed here.
 
------
-Above copyright notice does not include the dependencies used below:
+## Project structure
 
-3rd Party Assets Used:
-* https://assetstore.unity.com/packages/essentials/starter-assets-first-person-character-controller-196525
-* https://assetstore.unity.com/packages/tools/network/rest-client-for-unity-102501
-* https://www.clipartmax.com/download/m2i8H7G6d3K9N4N4_the-mouse-cursor-click-icon-shown-click-icon/
-* https://www.pexels.com/photo/brown-brick-wall-1227515/
-* https://www.pexels.com/photo/person-holding-white-and-black-frame-4065183/
-* https://unsplash.com/photos/2JONUbTfN38
-* https://freesound.org/people/sandyrb/sounds/105348/
-* https://assetstore.unity.com/packages/tools/network/rest-client-for-unity-102501
-* https://github.com/proyecto26/RestClient
-* https://freesound.org/people/kwahmah_02/sounds/275072/
+- `Assets/__My Prototype/` — project scenes, scripts, prefabs, audio, and tutorial videos.
+- `Assets/EZPZ Interaction Toolkit/` — Matt Cabanag's interaction toolkit used as a starting point for the project.
+- `Assets/EZPZ Examples/` — examples supplied with the toolkit.
+- `Assets/XR/` and `Assets/XRI/` — XR and interaction configuration and assets.
+- `Packages/manifest.json` — Unity package dependencies.
+- `ProjectSettings/EditorBuildSettings.asset` — build scene order: tutorial, then main scene.
 
-Google images for:
-Peppa Pig, Gundam, Elmo, Doraemon, Poo plush toy
+## Credits and licenses
 
+This prototype is by Zoey W for DDES9902. It uses **EZPZ Interaction Toolkit by Matt Cabanag**. The toolkit is distributed under the MIT License; its copyright notice, license text, and asset acknowledgements are retained in [`Assets/README_EZPZ.txt`](Assets/README_EZPZ.txt). The [original toolkit guide](https://youtu.be/mIoewQ2zQBI) and [EZPZ video tutorials](https://www.youtube.com/playlist?list=PLZP8wzCUfgsKfgJDXuiHHAw-qjcEev1k-) provide further background.
+
+The repository also includes other Unity packages and third-party art, audio, and effects. Their own license or attribution files, where supplied, remain with the corresponding assets. The EZPZ MIT License does not automatically cover those assets or this prototype as a whole.
